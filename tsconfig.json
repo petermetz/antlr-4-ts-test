@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "module": "commonjs",
+        "lib": [
+            "es2017"
+        ],
+        "moduleResolution": "node",
+        "outDir": "build/tsc/",
+        "noImplicitAny": false,
+        "inlineSourceMap": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    }
+}
