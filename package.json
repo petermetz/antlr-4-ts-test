@@ -5,6 +5,7 @@
   "main": "/build/tsc/main/typescript/index.js",
   "scripts": {
     "clean": "rm -rf ./build/*",
+    "prestart": "npm run build",
     "start": "node build/tsc/main/typescript/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild2": "npm run antlr; npm run clean",
