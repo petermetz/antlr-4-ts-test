@@ -7,20 +7,21 @@
     "clean": "rm -rf ./build/*",
     "start": "node build/tsc/main/typescript/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "npm run antlr; npm run clean",
-    "build": "npm run antlr; npm run tsc",
+    "prebuild2": "npm run antlr; npm run clean",
+    "prebuild": "npm run clean",
+    "build": "npm run tsc",
     "tsc": "./node_modules/.bin/tsc",
     "preantlr": "rm -rf src/gen/*",
     "antlr": "./node_modules/.bin/antlr4ts -visitor src/main/g4/SOQL.g4 -o src/gen/typescript/soql-parser/"
   },
-  "author": "Peter (Somogyvari) Metz <peter.somogyvari@accenture.com",
+  "author": "Peter (Somogyvari) Metz <peter.somogyvari@accenture.com>",
   "license": "UNLICENSED",
   "dependencies": {
-    "antlr4ts": "^0.4.1-alpha.0"
+    "antlr4ts": "0.4.1-alpha.0"
   },
   "devDependencies": {
-    "@types/node": "^8.0.14",
-    "antlr4ts-cli": "^0.4.0-alpha.4",
-    "typescript": "^2.4.1"
+    "@types/node": "8.0.14",
+    "antlr4ts-cli": "0.4.0-alpha.4",
+    "typescript": "2.4.1"
   }
 }
